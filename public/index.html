@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Mi Primer Chat</title>
+
+    <!--Firebase-->
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyDkmIPdxTZZGzRcnRXTjMKQ7U4DHE4_KTw",
+          authDomain: "chat-firebase-basico.firebaseapp.com",
+          databaseURL: "https://chat-firebase-basico.firebaseio.com",
+          projectId: "chat-firebase-basico",
+          storageBucket: "chat-firebase-basico.appspot.com",
+          messagingSenderId: "366641239876",
+          appId: "1:366641239876:web:7ff79c32fa5c22bf90e911"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+      </script>
+  </head>
+
+  <body>
+
+    <div class="container">
+        <nav class="navbar navbar-dark bg-dark">
+            <span class="navbar-brand" id="nombreUsuario">Chat</span>
+            <div id="botones">
+                <!--Acceder y Cerrar Sesión-->
+            </div>
+        </nav>
+
+        <main id="contenidoProtegido" class="mt-3" style="height: 79vh; overflow-y: scroll;">
+          <!--<p class="text-center lead mt-5">Debes iniciar sesión</p>-->
+          
+          <!--Pantalla del Chat-->
+          
+
+        </main>
+        
+        <form id="formulario"><!--clases puestas con JS-->
+          <input type="text" class="form-control" placeholder="Enviar Mensaje" id="inputChat">
+          <div class="input-group-append">
+            <button class="btn btn-primary" type="submit">Enviar</button>
+          </div>
+        </form>
+
+    </div>
+
+
+    <script src="app.js"></script>
+
+
+    
+  </body>
+</html>
